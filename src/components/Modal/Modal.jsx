@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import PropTypes from 'prop-types';
-import styles from 'components/Modal/Modal.module.css';
+import styles from './Modal.module.css';
 
 export default class Modal extends Component {
     static propTypes = {
@@ -32,8 +32,8 @@ export default class Modal extends Component {
 
     render() {
         return (
-            <div className={styles.overlay} onClick={this.clickBackdrop}>
-                <div className={styles.modal}>
+            <div className={styles.Overlay} onClick={this.clickBackdrop}>
+                <div className={styles.Modal}>
                     <img src={this.props.largeImage} alt="" />
                 </div>
             </div>
